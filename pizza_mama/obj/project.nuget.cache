@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BW9ZTnAi0PzBNKgqpWR+S6MY985PsASmIadp8YBnA3FOMnRqM8IfAlMxWNkUyYp2EBydW14hCkhexeNpal3zMg==",
+  "dgSpecHash": "6PHCErbLa12gfBSGLGbWzlw7zqrRH+a1vUyj910PRe3kuN2Xl1Ko45lxBMm/wm9B1r2I5Pl6/0SmoclFAHM2ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theor\\Desktop\\dev\\cs_projects\\pizza_mama\\pizza_mama\\pizza_mama.csproj",
+  "projectFilePath": "C:\\Users\\theor\\Desktop\\dev\\csharp\\dotnet_training_pizza\\pizza_mama\\pizza_mama.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theor\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\theor\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,6 +26,11 @@ namespace pizza_mama
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+            {
+            options.LoginPath = "/Admin";
+            });
+
             // IOC -> Inversion of Control -> Créer des instances ou conserver des instances uniques (singleton)
             services.AddDbContext<DataContext>(options =>options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -47,9 +53,10 @@ namespace pizza_mama
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            
             app.UseRouting();
 
+            app.UseAuthentication(); 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
